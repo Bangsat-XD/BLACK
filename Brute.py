@@ -161,16 +161,16 @@ def menu():
         exit(" %s[!] anda tidak terhubung ke internet!"%(M))
 
     logo()
-    print(" %s\033[1;96m[\033[1;91m☆\033[1;96m]\033[1;92m \033[1;96m------------------------------------------------------"%(N))
+    print(" %s\033[1;96m[\033[1;91m☆\033[1;96m]\033[1;92m \033[1;96m----------------------------------------------------------"%(N))
     print(" \033[1;96m[\033[1;92m®\033[1;96m]\033[1;92m \033[1;97mAuthor     : \033[1;92m☆ RAKA ☆ ™︻®╤───────═◍➤.")
     print(" \033[1;96m[\033[1;92m®\033[1;96m]\033[1;92m \033[1;97mGithub     : \033[1;92mhttps://github.com/Bangsat-XD")
     print(" \033[1;96m[\033[1;92m®\033[1;96m]\033[1;92m \033[1;97mFacebook   : \033[1;92mRaka Andrian Tara")
     print(" \033[1;96m[\033[1;92m®\033[1;96m]\033[1;92m \033[1;97mInstagram  : \033[1;92mraka_andrian27")
-    print(" \033[1;96m[\033[1;91m☆\033[1;96m]\033[1;92m \033[1;96m------------------------------------------------------")
-    print(" \033[1;96m[\033[1;92m®\033[1;96m]\033[1;92m \033[1;97mBergabung  : \033[1;92m%s"%(tgl))
+    print(" \033[1;96m[\033[1;91m☆\033[1;96m]\033[1;92m \033[1;96m----------------------------------------------------------")
+    print(" \033[1;96m[\033[1;92m®\033[1;96m]\033[1;92m \033[1;97mBergabung  : \033[1;93m%s"%(tgl))
     print(" \033[1;96m[\033[1;92m®\033[1;96m]\033[1;92m \033[1;97mStatus     : %sPremium%s"%(H,N))
-    print(" \033[1;96m[\033[1;91m☆\033[1;96m]\033[1;92m \033[1;96m------------------------------------------------------")
-    print(" \033[1;96m[\033[1;91m*\033[1;96m]\033[1;92m \033[1;97mIP         : %s"%(IP))
+    print(" \033[1;96m[\033[1;91m☆\033[1;96m]\033[1;92m \033[1;96m----------------------------------------------------------")
+    print(" \033[1;96m[\033[1;91m*\033[1;96m]\033[1;92m \033[1;97mIP         : \033[1;93m%s"%(IP))
     print("\n [ selamat datang %s%s%s ]\n"%(K,nama,N))
     print(" \033[1;96m[\033[1;92m1\033[1;96m]\033[1;92m \033[1;97mCrack Dari Id Publik")
     print(" \033[1;96m[\033[1;92m2\033[1;96m]\033[1;92m \033[1;97mCrack Dari Id Massal")
@@ -214,15 +214,15 @@ def publik():
 	try:
 		token = open("token.txt", "r").read()
 	except IOError:
-		exit(" [!] token kadaluwarsa")
-	print(" [*] isi 'me' jika ingin crack dari daftar teman")
-	idt = raw_input(" [*] masukan id atau username : ")
+		exit(" \033[1;96m[\033[1;92m!\033[1;96m]\033[1;92m \033[1;97mtToken Kadaluwarsa")
+	print(" \033[1;96m[\033[1;92m®\033[1;96m]\033[1;92m \033[1;97mIsi 'Me' Jika Ingin Crack Dari Daftar Teman")
+	idt = raw_input(" \033[1;96m[\033[1;92m®\033[1;96m]\033[1;92m \033[1;97mMasukan Id Atau Username : ")
 	try:
 		for i in requests.get("https://graph.facebook.com/%s/friends?access_token=%s"%(idt, token)).json()["data"]:
 			id.append(i["id"]+"<=>"+i["name"])
 	except KeyError:
-		exit(" [!] akun tidak tersedia atau list teman private")
-	print("\n [+] total id -> %s%s%s"%(M,len(id),N)) 
+		exit(" \033[1;96m[\033[1;92m!\033[1;96m]\033[1;92m \033[1;97mAkun Tidak Tersedia Atau List Teman Private")
+	print("\n \033[1;96m[\033[1;92m®\033[1;96m]\033[1;92m \033[1;97mTotal ID •> %s%s%s"%(M,len(id),N)) 
   
 ### DUMP MASSAL ###
 def massal():
@@ -230,22 +230,22 @@ def massal():
 	try:
 		token = open("token.txt", "r").read()
 	except IOError:
-		exit(" [!] token kadaluwarsa")
+		exit(" \033[1;96m[\033[1;92m!\033[1;96m]\033[1;92m \033[1;97mToken Kadaluwarsa")
 	try:
-		tanya_total = int(raw_input(" [?] masukan jumlah target : "))
+		tanya_total = int(raw_input(" \033[1;96m[\033[1;92m?\033[1;96m]\033[1;92m \033[1;97mMasukan Jumlah Target : "))
 	except:tanya_total=1
-	print(" [*] isi 'me' jika ingin crack dari daftar teman")
+	print(" \033[1;96m[\033[1;92m®\033[1;96m]\033[1;92m \033[1;97mIsi 'Me' Jika Ingin Crack Dari Daftar Teman")
 	for t in range(tanya_total):
 		t +=1
-		idt = raw_input(" [?] masukan id atau username %s : "%(t))
+		idt = raw_input(" \033[1;96m[\033[1;92m?\033[1;96m]\033[1;92m \033[1;97mMasukan Id Atau Username %s : "%(t))
 		try:
 			for i in requests.get("https://graph.facebook.com/%s/friends?access_token=%s"%(idt, token)).json()["data"]:
 				uid = i["id"]
 				nama = i["name"]
 				id.append(uid+"<=>"+nama)
 		except KeyError:
-			print(" [!] akun tidak tersedia atau list teman private")
-	print("\n [+] total id -> %s%s%s"%(M,len(id),N)) 
+			print(" \033[1;96m[\033[1;92m!\033[1;96m]\033[1;92m \033[1;97mAkun Tidak Tersedia Atau List Teman Private")
+	print("\n \033[1;96m[\033[1;92m®\033[1;96m]\033[1;92m \033[1;97mtTotal ID •> %s%s%s"%(M,len(id),N)) 
 	
 ### DUMP FOLLOWERS ###
 def followers():
