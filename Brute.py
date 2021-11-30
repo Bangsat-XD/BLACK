@@ -107,14 +107,15 @@ def tokenz():
 	except (KeyError, IOError):
 		os.system('clear')
 		logo()
-		print(" %s[®] =========================================================="%(N))
+		print(" %s[☆] =========================================================="%(N))
 		print(" [®] Author     : ☆ RAKA ☆ ™︻®╤───────═◍➤")
 		print(" [®] Github     : https://github.com/Bangsat-XD")
 		print(" [®] Facebook   : Raka Andrian Tara")
-		print(" [®] ==========================================================")
+		print(" [®] Instagram  : raka_andrian27")
+		print(" [☆] ==========================================================")
 		print(" [®] Bergabung  : %s"%(tgl))
 		print(" [®] Status     : %sPremium%s"%(H,N))
-		print(" [®] ==========================================================")
+		print(" [☆] ==========================================================")
 		print(" [*] IP         : %s"%(IP))
 		token = raw_input('\n [?] ☆Masukan Token☆ ™︻®╤───────═◍➤ : ')
 		try:
