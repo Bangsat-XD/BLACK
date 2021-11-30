@@ -91,12 +91,12 @@ def jalan(z):
 def logo():
 	os.system("clear")
 	print("""\033[1;97m 
-               \033[1;91m┏━━━┓╋╋┏┓╋╋╋╋╋┏━━━┓╋╋╋╋╋╋╋╋╋╋┏┓
+               \033[1;92m┏━━━┓╋╋┏┓╋╋╋╋╋┏━━━┓╋╋╋╋╋╋╋╋╋╋┏┓™
                ┃┏━┓┃╋╋┃┃╋╋╋╋╋┃┏━┓┃╋╋╋╋╋╋╋╋╋╋┃┃
-               ┃┗━┛┣━━┫┃┏┳━━┓┃┃╋┃┣┓┏┳━━┳━┓┏━┛┣━━┓
-               ┃┏┓┏┫┏┓┃┗┛┫┏┓┃┃┗━┛┃┗┛┃┏┓┃┏┓┫┏┓┃┏┓┃
+               ┃┗━┛┣━━┫┃┏┳━━┓┃┃╋┃┣┓┏┳━━┳━┓┏━┛┣━━┓\033[1;92m
+               \033[1;95m┃┏┓┏┫┏┓┃┗┛┫┏┓┃┃┗━┛┃┗┛┃┏┓┃┏┓┫┏┓┃┏┓┃
                ┃┃┃┗┫┏┓┃┏┓┫┏┓┃┃┏━┓┃┃┃┃┏┓┃┃┃┃┗┛┃┏┓┃
-               ┗┛┗━┻┛┗┻┛┗┻┛┗┛┗┛╋┗┻┻┻┻┛┗┻┛┗┻━━┻┛┗┛      """)
+               ┗┛┗━┻┛┗┻┛┗┻┛┗┛┗┛╋┗┻┻┻┻┛┗┻┛┗┻━━┻┛┗┛\033[1;95m      """)
    
 ### BAGIAN LOGIN ###
 def tokenz():
@@ -107,14 +107,16 @@ def tokenz():
 	except (KeyError, IOError):
 		os.system('clear')
 		logo()
-		print(" %s[*] ---------------------------------------------"%(N))
-		print(" [*] Author      : ☆ RAKA ☆ ™︻®╤───────═◍➤")
-		print(" [*] Github      : https://github.com/Bangsat-XD")
-		print(" [*] ---------------------------------------------")
-		print(" [*] Bergabung   : %s"%(tgl))
-		print(" [*] Status      : %sPremium%s"%(H,N))
-		print(" [*] ---------------------------------------------")
-		print(" [*] IP          : %s"%(IP))
+		print(" %s[☆] =============================================================="%(N))
+		print(" [☆] Author        : ☆ RAKA ☆ ™︻®╤───────═◍➤")
+		print(" [☆] Github        : https://github.com/Bangsat-XD")
+		print(" [☆] Facebook      : Raka Andrian Tara")
+		print(" [☆] Instagram     : raka_andrian27")
+		print(" [☆] ==============================================================")
+		print(" [☆] Bergabung     : %s"%(tgl))
+		print(" [☆] Status        : %sPremium%s"%(H,N))
+		print(" [☆] ==============================================================")
+		print(" [☆] IP            : %s"%(IP))
 		token = raw_input('\n [?] ☆ Masukan Token ☆ ™︻®╤───────═◍➤ : ')
 		try:
 			otw = requests.get('https://graph.facebook.com/me?access_token='+token)
