@@ -178,8 +178,8 @@ def menu():
     print(" \033[1;96m[\033[1;92m4\033[1;96m]\033[1;92m \033[1;97mCrack Dari Postingan")
     print(" \033[1;96m[\033[1;92m5\033[1;96m]\033[1;92m \033[1;97mCek Opsi Hasil Crack")
     print(" \033[1;96m[\033[1;92m6\033[1;96m]\033[1;92m \033[1;97mCek Akun Hasil Crack")
-    print(" \033[1;96m[\033[1;92m%s0%s\033[1;96m]. logout (Hapus Token)"%(M,N))
-    asw = raw_input("\n [?] Pilih Menu : ")
+    print(" \033[1;96m[\033[1;92m%s0%s\033[1;96m] \033[1;97mLogout [\033[1;91mHapus Token\033[1;97m]"%(M,N))
+    asw = raw_input("\n \033[1;96m[\033[1;92m?\033[1;96m]\033[1;92m \033[1;97mPilih Menu : ")
     if asw == "":
     	menu()
     elif asw == "1":
@@ -202,10 +202,10 @@ def menu():
     	ambil_id()
     elif asw == "0":
     	os.system('rm -f token.txt')
-    	jalan(" [✓] Berhasil Menghapus Token ")
+    	jalan(" \033[1;96m[\033[1;92m✓\033[1;96m]\033[1;92m \033[1;97mBerhasil Menghapus Token ")
     	exit()
     else:
-    	jalan(" [!] Pilih Jawaban Dengan Bener ! ")
+    	jalan(" \033[1;96m[\033[1;92m?\033[1;96m]\033[1;92m \033[1;97mPilih Jawaban Dengan Bener ! ")
     	menu() 
     
 ### DUMP PUBLIK ###
