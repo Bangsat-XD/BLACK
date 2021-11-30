@@ -111,7 +111,6 @@ def tokenz():
 		print(" [☆] Author     : ☆ RAKA ☆ ™︻®╤───────═◍➤")
 		print(" [☆] Github     : https://github.com/Bangsat-XD")
 		print(" [☆] Facebook   : Raka Andrian Tara")
-		print(" [☆] Instagram  : raka_andrian27")
 		print(" [☆] ==========================================================")
 		print(" [☆] Bergabung  : %s"%(tgl))
 		print(" [☆] Status     : %sPremium%s"%(H,N))
