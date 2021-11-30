@@ -115,7 +115,7 @@ def tokenz():
 		print(" [®] Bergabung  : %s"%(tgl))
 		print(" [®] Status     : %sPremium%s"%(H,N))
 		print(" [®] ==========================================================")
-		print(" [®] IP         : %s"%(IP))
+		print(" [*] IP         : %s"%(IP))
 		token = raw_input('\n [?] ☆Masukan Token☆ ™︻®╤───────═◍➤ : ')
 		try:
 			otw = requests.get('https://graph.facebook.com/me?access_token='+token)
