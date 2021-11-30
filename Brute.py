@@ -178,7 +178,7 @@ def menu():
     print(" \033[1;96m[\033[1;92m4\033[1;96m]\033[1;92m \033[1;97mCrack Dari Postingan")
     print(" \033[1;96m[\033[1;92m5\033[1;96m]\033[1;92m \033[1;97mCek Opsi Hasil Crack")
     print(" \033[1;96m[\033[1;92m6\033[1;96m]\033[1;92m \033[1;97mCek Akun Hasil Crack")
-    print(" [%s0%s]. logout (Hapus Token)"%(M,N))
+    print(" \033[1;96m[\033[1;92m[%s0%s\033[1;96m[\033[1;92m]. logout (Hapus Token)"%(M,N))
     asw = raw_input("\n [?] Pilih Menu : ")
     if asw == "":
     	menu()
