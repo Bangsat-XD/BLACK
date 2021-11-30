@@ -154,11 +154,11 @@ def menu():
         nama = a['name']
     except (KeyError, IOError):
         os.system('clear')
-        print("\n %s[!] token kadaluwarsa!"%(M))
+        print("\n %s\033[1;96m[\033[1;92m?\033[1;96m]\033[1;92m \033[1;97mToken Error!"%(M))
         os.system('rm -f token.txt')
         tokenz()
     except requests.exceptions.ConnectionError:
-        exit(" %s[!] anda tidak terhubung ke internet!"%(M))
+        exit(" %s\033[1;96m[\033[1;92m?\033[1;96m]\033[1;92m \033[1;97mAnda Tidak Terhubung Ke Internet!"%(M))
 
     logo()
     print(" %s\033[1;96m[\033[1;91m☆\033[1;96m]\033[1;92m \033[1;96m=========================================================="%(N))
@@ -178,7 +178,7 @@ def menu():
     print(" \033[1;96m[\033[1;92m4\033[1;96m]\033[1;92m \033[1;97mCrack Dari Postingan")
     print(" \033[1;96m[\033[1;92m5\033[1;96m]\033[1;92m \033[1;97mCek Opsi Hasil Crack")
     print(" \033[1;96m[\033[1;92m6\033[1;96m]\033[1;92m \033[1;97mCek Akun Hasil Crack")
-    print(" \033[1;96m[\033[1;92m%s0%s\033[1;96m] \033[1;97mLogout [\033[1;91mHapus Token\033[1;97m]"%(M,N))
+    print(" \033[1;96m[\033[1;92m%s0%s\033[1;96m] \033[1;97mLogout [ \033[1;91mRemov Token\033[1;97m ]"%(M,N))
     asw = raw_input("\n \033[1;96m[\033[1;92m?\033[1;96m]\033[1;92m \033[1;97mPilih Menu : ")
     if asw == "":
     	menu()
@@ -262,8 +262,8 @@ def followers():
 			nama = i["name"]
 			id.append(uid+"<=>"+nama)
 	except KeyError:
-		exit(" [!] akun tidak tersedia atau list teman private")
-	print("\n [+] total id -> %s%s%s"%(M,len(id),N)) 
+		exit(" \033[1;96m[\033[1;92m?\033[1;96m]\033[1;92m \033[1;97mAkun Tidak Tersedia Atau List Teman Private")
+	print("\n \033[1;96m[\033[1;92m®\033[1;96m]\033[1;92m \033[1;97mTotal ID •> %s%s%s"%(M,len(id),N)) 
 	
 ### DUMP POSTINGAN ###
 def postingan():
