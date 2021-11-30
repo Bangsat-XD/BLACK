@@ -175,8 +175,8 @@ def menu():
     print(" \033[1;96m[\033[1;92m4\033[1;96m]\033[1;92m Crack Dari Postingan")
     print(" \033[1;96m[\033[1;92m5\033[1;96m]\033[1;92m Cek Opsi Hasil Crack")
     print(" \033[1;96m[\033[1;92m6\033[1;96m]\033[1;92m Cek Akun Hasil Crack")
-    print(" [%s00%s]. logout (hapus token)"%(M,N))
-    asw = raw_input("\n [?] pilih menu : ")
+    print(" [%s00%s]. logout (Hapus Token)"%(M,N))
+    asw = raw_input("\n [?] Pilih Menu : ")
     if asw == "":
     	menu()
     elif asw == "1":
@@ -199,10 +199,10 @@ def menu():
     	ambil_id()
     elif asw == "0":
     	os.system('rm -f token.txt')
-    	jalan(" [✓] berhasil menghapus token ")
+    	jalan(" [✓] Berhasil Menghapus Token ")
     	exit()
     else:
-    	jalan(" [!] pilih jawaban dengan bener ! ")
+    	jalan(" [!] Pilih Jawaban Dengan Bener ! ")
     	menu() 
     
 ### DUMP PUBLIK ###
