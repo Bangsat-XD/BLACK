@@ -28,6 +28,7 @@ except ImportError:
 	os.system("pip install futures")
 
 
+
 ### GLOBAL WARNA ###
 P = '\x1b[1;97m' # PUTIH               
 M = '\x1b[1;91m' # MERAH            
