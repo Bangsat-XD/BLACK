@@ -4,7 +4,7 @@
 
 ### IMPORT MODULE ###
 import os, sys, re, time, requests, calendar, random,json
-from concurrent.futures import ThreadPoolExecutor
+from concurrent.futures
 from bs4 import BeautifulSoup as parser
 from datetime import datetime
 from datetime import date
