@@ -1,6 +1,6 @@
 #!/usr/bin/python2
 # coding=utf-8
-# author : Fall Xavier
+# author : Raka Andrian Tara
 
 ### IMPORT MODULE ###
 import os, sys, re, time, requests, calendar, random,json
@@ -107,14 +107,17 @@ def tokenz():
 	except (KeyError, IOError):
 		os.system('clear')
 		logo()
-		print(" %s[*] Author      : Raka Andrian Tara."%(N))
+		print(" %s[*] ---------------------------------------------"%(N))
+		print(" [*] Author      : Raka Andrian Tara")
 		print(" [*] Github      : https://github.com/Bangsat-XD")
+		print(" [*] Facebook    : Raka Andrian Tara")
+		print(" [*] Instagram   : raka_andrian27")
 		print(" [*] ---------------------------------------------")
 		print(" [*] Bergabung   : %s"%(tgl))
 		print(" [*] Status      : %sPremium%s"%(H,N))
 		print(" [*] ---------------------------------------------")
 		print(" [*] IP          : %s"%(IP))
-		token = raw_input('\n [?] masukan token : ')
+		token = raw_input('\n [?] ENTER Token : ')
 		try:
 			otw = requests.get('https://graph.facebook.com/me?access_token='+token)
 			a = json.loads(otw.text)
@@ -158,22 +161,25 @@ def menu():
         exit(" %s[!] anda tidak terhubung ke internet!"%(M))
 
     logo()
-    print(" %s[*] Author     : Raka Andrian Tara."%(N))
+    print(" %s[*] ---------------------------------------------"%(N))
+    print(" [*] Author     : Raka Andrian Tara")
     print(" [*] Github     : https://github.com/Bangsat-XD")
+    print(" [*] Facebook   : Raka Andrian Tara")
+    print(" [*] Instagram  : raka_andrian27")
     print(" [*] --------------------------------------------")
     print(" [*] Bergabung  : %s"%(tgl))
     print(" [*] Status     : %sPremium%s"%(H,N))
     print(" [*] --------------------------------------------")
     print(" [*] IP         : %s"%(IP))
     print("\n [ selamat datang %s%s%s ]\n"%(K,nama,N))
-    print(" [01]. crack dari id publik")
-    print(" [02]. crack dari id massal")
-    print(" [03]. crack dari followers")
-    print(" [04]. crack dari postingan")
-    print(" [05]. cek opsi hasil crack")
-    print(" [06]. cek akun hasil crack")
+    print(" [01]. Crack Dari Id Publik")
+    print(" [02]. Crack Dari Id Massal")
+    print(" [03]. Crack Dari Followers")
+    print(" [04]. Crack Dari Postingan")
+    print(" [05]. Cek Opsi Hasil Crack")
+    print(" [06]. Cek Akun Hasil Crack")
     print(" [%s00%s]. logout (hapus token)"%(M,N))
-    asw = raw_input("\n [?] pilih menu : ")
+    asw = raw_input("\n [?] Pilih Menu : ")
     if asw == "":
     	menu()
     elif asw == "1":
